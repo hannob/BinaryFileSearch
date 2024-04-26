@@ -40,7 +40,7 @@ class TestBinaryFileSearch_StrMode(TestCase):
         self.assertEqual(1, len(self.bfs.search('aaa')))
 
     def test_multiple_lines(self):
-        self.assertEquals(2, len(self.bfs.search('bA')))
+        self.assertEqual(2, len(self.bfs.search('bA')))
 
     def test_multiple_searches(self):
         self.assertEqual([['bA', 'fourth_1'], ['bA', 'fourth_2']], self.bfs.search(query='bA'))
