@@ -1,3 +1,4 @@
+import unittest
 from unittest import TestCase
 from binary_file_search.BinaryFileSearch import BinaryFileSearch
 
@@ -107,3 +108,7 @@ class TestBinaryFileSearch_IntModeSecondColumn(TestCase):
 
     def test_multiple_lines(self):
         self.assertLess(1, len(self.bfs.search(40)))
+
+
+if __name__ == "__main__":
+    unittest.main()
